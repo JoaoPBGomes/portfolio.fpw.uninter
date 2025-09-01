@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio - João Pedro</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Sobre Mim</a></li>
+      <li><a href="formacao.html">Formação</a></li>
+      <li><a href="portfolio.html">Portfólio</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="portfolio">
+
+      <!-- Projeto 1 -->
+      <div class="projeto-card" onclick="abrirModal('modal1')">
+        <h2>Projeto 1 – Programa de Marmitaria</h2>
+        <p>Programa fictício para venda de marmitex.</p>
+      </div>
+
+      <!-- Projeto 2 -->
+      <div class="projeto-card" onclick="abrirModal('modal2')">
+        <h2>Projeto 2 – Fábrica de Camisas</h2>
+        <p>Programa fictício para venda de camisas.</p>
+      </div>
+
+      <!-- Projeto 3 -->
+      <div class="projeto-card" onclick="abrirModal('modal3')">
+        <h2>Projeto 3 – Sistema de Funcionários</h2>
+        <p>Progrma fictício para cadastro de funcionários.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 João Pedro</p>
+  </footer>
+
+  <!-- Modais -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <span class="fechar" onclick="fecharModal('modal1')">&times;</span>
+      <h2>Projeto 1 – Programa de Marmitaria</h2>
+      <img src="images/projeto1.jpg" alt="Programa da Marmitex">
+      <p>Programa para venda de marmitex, programado em python em que, o programa mostra um menu para o cliente e ele seleciona o sabor e o tamaho, então o programa retorna o valor total do pedido.</p>
+      <p><a href="https://github.com/JoaoPBGomes/projetos/blob/main/projetoMarmita.py" target="_blank">🔗 Ver código no GitHub</a></p>
+    </div>
+  </div>
+
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <span class="fechar" onclick="fecharModal('modal2')">&times;</span>
+      <h2>Projeto 2 – Fábrica de Camisas </h2>
+      <img src="images/projeto2.jpg" alt="Fábrica de Camisas">
+      <p>Programa para venda de camisas, programado em python em que, o programa mostra um menu para o cliente e ele seleciona o tamanho, tipo de tecido e frete, então o programa retorna o valor total do pedido.</p>
+      <p><a href="https://github.com/JoaoPBGomes/projetos/blob/main/projetoCamisa.py" target="_blank">🔗 Ver código no GitHub</a></p>
+    </div>
+  </div>
+
+  <div id="modal3" class="modal">
+    <div class="modal-content">
+      <span class="fechar" onclick="fecharModal('modal3')">&times;</span>
+      <h2>Projeto 3 – Sistema de Funcionários</h2>
+      <img src="images/projeto3.jpg" alt="Sistema de Funcionários">
+      <p>Programa para gerenciamento de funcionários, programado em python em que, o programa mostra um menu com opções de cadastro e consulta de funcionários.</p>
+      <p><a href="https://github.com/JoaoPBGomes/projetos/blob/main/projetoFuncionario.py" target="_blank">🔗 Ver código no GitHub</a></p>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

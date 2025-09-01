@@ -1,0 +1,261 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f7f9;
+    color: #333;
+    padding-top: 60px; /* espaço para menu fixo */
+}
+
+/* Menu fixo */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #1e1e2f;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 0;
+    display: block;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #ffd700;
+    font-weight: bold;
+    border-bottom: 2px solid #ffd700;
+    padding-bottom: 13px;
+}
+
+/* Seção hero */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #fff;
+    border-radius: 10px;
+}
+
+.hero img.perfil {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #ffd700;
+    margin-bottom: 20px;
+}
+
+/* Sobre Mim e Formação */
+.sobre-mim {
+    background-color: #fff;
+    padding: 30px;
+    margin: 30px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    max-width: 900px;
+}
+
+.sobre-mim h1, .sobre-mim h2 {
+    color: #1e1e2f;
+    margin-top: 20px;
+}
+
+.sobre-mim p {
+    margin-top: 10px;
+    line-height: 1.7;
+}
+
+.sobre-mim ul {
+    margin-top: 10px;
+    list-style: disc inside;
+}
+
+/* Portfólio */
+.projeto-card {
+  background: #fff;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  max-width: 700px;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.projeto-card:hover {
+  transform: scale(1.02);
+  background: #f9f9f9;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.6);
+}
+
+.modal-content {
+  background: #fff;
+  margin: 8% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 70%;
+  max-width: 600px;
+  text-align: center;
+}
+
+.modal-content img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin: 15px 0;
+}
+
+.modal-content a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #3366cc;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.modal-content a:hover {
+  text-decoration: underline;
+  color: #003399;
+}
+
+.fechar {
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Contato */
+.contato {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.contato h1 {
+  color: #333366;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.contato p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Formulário centralizado */
+.contato form {
+  max-width: 500px;
+  margin: 0 auto 20px auto; /* centralizado e com espaço abaixo */
+  padding: 20px;
+  background: #fafafa;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.contato label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.contato input,
+.contato textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.contato button {
+  width: 100%;
+  padding: 12px;
+  background: #333366;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contato button:hover {
+  background: #555599;
+}
+
+/* Redes sociais em linha */
+.redes-sociais {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* distância entre os links */
+  margin-top: 20px;
+}
+
+.redes-sociais a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.redes-sociais .linkedin {
+  background: #0e76a8;
+  color: #fff;
+}
+
+.redes-sociais .github {
+  background: #24292e;
+  color: #fff;
+}
+
+.redes-sociais a:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+.icon {
+  font-size: 18px;
+  font-weight: bold;
+}
